@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+
+		<script src="js/bootstrap.min.js"></script>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<title>注册注册</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<ul class="nav nav-tabs" id="daohang">
+				<div class="navbar-header" id="logo">
+					<a class="navbar-brand">
+						<img src="img/logo1.png" art=logo "" id="logo" />
+					</a>
+				</div>
+				<li class="active">
+					<a href="#login" data-toggle="tab">登录</a>
+				</li>
+				<li>
+					<a href="#regist" data-toggle="tab">注册</a>
+				</li>
+
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active " id="login">
+					<div>
+						<br />
+						<h3 align="center">登录我的空间</h3><br />
+						<div class="form-group" align="center">
+							<label for="user">账号：</label>
+
+							<input type="text" name="username" id="user" placeholder="请输入账号" />
+
+						</div>
+
+						<div class="form-group" align="center">
+							<label for="password">密码：</label>
+							<input type="password" name="password" id="password" placeholder="请输入密码" />
+						</div>
+
+						<div class="form-inline" align="center">
+							<tr>
+								
+							
+							<td><label for="vcode">验证码：</label></td>
+							<td><input type="text" name="verifycode" class="form-control" id="verifycode" placeholder="请输入验证码" style="width: 120px;" /></td>
+							<td><img src="img/yanzhengma.jpg" title="看不清点击刷新" id="vcode" /></td>
+								
+						</tr>
+						</div><br />
+
+						<div>
+
+							<table align="center">
+								<tr>
+									<td colspan="2" align="center"><a href="index.html"><input id="login1" type="submit" style="background:yellow" value="登录">&nbsp;&nbsp;</a>
+									</td>
+									<td colspan="2" align="center"><a href="index.html"><input type="button" value="忘记密码" style="background:#38B0DE"></a>
+									</td>
+
+								</tr>
+
+							</table>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="tab-pane fade" id="regist">
+					<div>
+						<br />
+						<h3 align="center">欢迎注册</h3><br />
+						<div class="form-group" align="center">
+							<label for="user">账号：</label>
+
+							<input type="text" name="username" id="user" placeholder="请输入账号" />
+
+						</div>
+
+						<div class="form-group" align="center">
+							<label for="password">密码：</label>
+							<input type="password" name="password" id="password" placeholder="请输入密码" />
+						</div>
+						<div class="form-group" align="center">
+							<label for="password">密码：</label>
+							<input type="password" name="password" id="password" placeholder="请再次输入密码" />
+						</div>
+
+						<div class="form-inline" align="center" id="yanzhengma">
+							<label for="vcode">验证码：</label>
+							<input type="text" name="verifycode" class="form-control" id="verifycode" placeholder="请输入验证码" style="width: 120px;" />
+							<a href="javascript:refreshCode();">
+								<img src="img/yanzhengma.jpg" title="看不清点击刷新" id="vcode" />
+							</a>
+						</div><br />
+
+						<div>
+
+							<table align="center">
+								<tr>
+									<td colspan="2" align="center"><a href="index.html"><input id="login1" type="submit" style="background:yellow" value="登录">&nbsp;&nbsp;</a>
+									</td>
+									<td colspan="2" align="center"><a href="index.html"><input type="button" value="忘记密码" style="background:#38B0DE"></a>
+									</td>
+
+								</tr>
+
+							</table>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+
+</html>

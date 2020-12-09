@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--移动优先-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>古风网站</title>
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+
+		<script src="js/bootstrap.min.js"></script>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+
+		<script type="text/javascript">
+			window.onload = function() {
+
+				$(".carousel").carousel({
+					interval: 2000 //每隔两秒自动轮播
+				})
+				$(".carousel").carousel1({
+					interval: 2000 //每隔两秒自动轮播
+				})
+
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<a class="navbar-brand">
+						<img src="img/logo1.png" art="logo" id="logo" />
+					</a>
+				</div>
+
+				<ul class="nav nav-tabs">
+
+					<li>
+
+						<a href="#index" data-toggle="tab">主页</a>
+					</li>
+					<li>
+						<a href="poetry.html">古诗词</a>
+					</li>
+					<li>
+						<a href="music.html">古风歌曲</a>
+					</li>
+					<li>
+						<a href="photo.html">古风相册</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">更多&nbsp;<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="yumu.html">作者<span class="badge">1</span></a>
+							</li>
+							<li>
+								<a href="about.html">关于<span class="badge">5</span></a>
+							</li>
+
+						</ul>
+					</li>
+					<!--搜索-->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<span style="padding-right: 15px;"><a href="login.html">登录</a></span>
+							<input type="text" class="form-control" placeholder="请输入关键字">
+						</div>
+						<a href="#"><img src="img/search.png" height="36" width="36" /></a>
+					</form>
+				</ul>
+
+			</nav>
+
+			<div class="tab-pane" id="index">
+
+				<div class="container">
+					<div class="row">
+						<!--左侧-->
+						<div class="col-xs-5">
+							<!--左侧上面的部分-->
+							<div class="row" id="inzs">
+								<div class="container" id="myCarousel">
+									<!-- 轮播图容器 -->
+									<div id="carousel-example-generic" class="carousel slide">
+										<!-- 轮播图上的圆圈链接 -->
+										<ol class="carousel-indicators radiou">
+											<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+											<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+											<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+											<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+										</ol>
+										<!-- 轮播图具体内容 -->
+										<div class="carousel-inner">
+											<div class="item active">
+												<img src="img/img07.jpg" style="height: 300px; width:600px">
+												<!-- 图上文字 -->
+												<div class="carousel-caption">
+													<h4>诗酒</h4>
+													<p>情不知所起,一往而深</p>
+												</div>
+											</div>
+											<div class="item">
+												<img src="img/img08.jpg" style="height: 300px; width:600px">
+												<!-- 图上文字 -->
+												<div class="carousel-caption">
+													<h4>青衣</h4>
+													<p>醉里论道,醒时折花</p>
+												</div>
+											</div>
+											<div class="item">
+												<img src="img/img09.jpg" style="height: 300px; width:600px">
+												<!-- 图上文字 -->
+												<div class="carousel-caption">
+													<h4>红装</h4>
+													<p>只道人间生死两茫茫</p>
+												</div>
+											</div>
+											<div class="item">
+												<img src="img/img01.jpg" style="height: 300px; width:600px">
+												<!-- 图上文字 -->
+												<div class="carousel-caption">
+													<h4>过客</h4>
+													<p>终是繁华迷了眼,醉了心</p>
+												</div>
+											</div>
+										</div>
+										<!-- 轮播图上的向前一图切换链接 -->
+										<a href="#carousel-example-generic" data-slide="prev" class="left carousel-control">
+											<span class="glyphicon glyphicon-chevron-left"></span>
+										</a>
+										<!-- 轮播图上的向后一图切换链接 -->
+										<a href="#carousel-example-generic" data-slide="next" class="right carousel-control">
+											<span class="glyphicon glyphicon-chevron-right"></span>
+										</a>
+									</div>
+								</div>
+
+							</div>
+
+							<!--左侧下面的部分-->
+							<div class="row" id="inzx">
+
+								<img src="img/1.gif" class="img-responsive img-circle" />
+
+							</div>
+						</div>
+						<!--右侧-->
+						<div class="col-xs-7" id="iny">
+							<!--右侧左面部分-->
+							<div class="col-xs-4" id="inyz">
+
+								<div class="panel panel-info">
+									<div class="panel-heading">
+										<span class="glyphicon glyphicon-music">&nbsp;诗酒</span>
+									</div>
+									<div class="panel-body">
+										<img src="img/img07.jpg" class="img-responsive" />
+
+									</div>
+
+									<div>
+										<p id="inyzwenzi">那一刻，巡古苑，采幽香，笑看芳草添新妆。临风陌上，邀文谈笔友，作诗万首，琴棋书画，饮酒千壶，且看翠柳醉夕阳。曲径通幽处，剪红情，裁绿意，莺歌燕舞，心静，影动。&nbsp;谁眼角朱红的泪痣成全了你的繁华一世、你金戈铁马的江山赠与谁一场石破惊天的空欢喜。
+										</p>
+
+									</div>
+								</div>
+								<div class="panel panel-info">
+									<div class="panel-heading">
+										<span class="glyphicon glyphicon-music">&nbsp;青衣</span>
+									</div>
+									<div class="panel-body">
+										<img src="img/img08.jpg" class="img-responsive" />
+
+									</div>
+
+									<div>
+										<p id="inyzwenzi1">今夕何夕，我已不再记得。昔日尘心若水，再也无法回到那如莲花初绽时的宁静，题诗赞花，赋词吟曲。只为思绪的牵引，我便跌入你专注的眼眸里。想人间婆娑，全无着落;看万般红紫，过眼成灰。
+										</p>
+
+									</div>
+								</div>
+
+							</div>
+							<!--右侧右面部分-->
+							<div class="col-xs-8" id="in_wen">
+								<div class="panel panel-info">
+									<div class="panel-heading">
+										<span class="glyphicon glyphicon-leaf">&nbsp;戏子入画</span>
+									</div>
+									<div class="panel-body">
+									</div>
+									<ul class="list-group">
+										<a href="essay.html">
+											<li class="list-group-item">海底月是天上月，眼前人是心上人。向来心是看客心，奈何人是剧中人。</li>
+										</a>
+										<a href="essay.html">
+											<li class="list-group-item">鲜衣怒马，金冠彩霞，惟愿执子之手，与妾厮守年华。</li>
+										</a>
+										<a href="essay.html">
+											<li class="list-group-item">断肠皆因相思故，千里途，万般苦，一念相思成伤。勿别离，轻慢舞，伊人回首莫相忘。</li>
+										</a>
+										<a href="essay.html">
+											<li class="list-group-item">一曲成殇，你说莫失莫忘，后来花月生凉。淤积成病再无良方。</li>
+										</a>
+										<a href="essay.html">
+											<li class="list-group-item">听弦断，断那三千痴缠。坠花湮，湮没一朝风涟。花若怜，落在谁的指尖。
+											</li>
+										</a>
+									</ul>
+
+									<div class="panel-footer">
+										<a href="yumu.html">作者：雨幕</a>
+										<a href="about.html"><span style="float: right">更多...</span></a>
+									</div>
+
+								</div>
+								<div class="panel panel-info">
+									<div class="panel-heading">
+										<span class="glyphicon glyphicon-leaf">&nbsp;樱雨落墨</span>
+									</div>
+									<div class="panel-body">
+									</div>
+									<ul class="list-group">
+										<a href="essay.html">
+											<li class="list-group-item">一生一世一双人，半醉半醒半浮生。.</li>
+										</a>
+										<a href="essay.html">
+											<li class="list-group-item">我恨生前未积缘，古佛青灯度流年。</li>
+										</a>
+										<a href="essay.html">
+											<li class="list-group-item">一念起，天涯咫尺;一念灭，咫尺天涯。</li>
+										</a>
+										<a href="essay.html">
+											<li class="list-group-item">半窗疏影，一梦千年，琴歌萧萧笛声怜。</li>
+										</a>
+										<a href="essay.html">
+											<li class="list-group-item">繁华尽处，寻一处无人山谷，建一木制小屋，铺一青石小路，与你晨钟暮鼓，安之若素</li>
+										</a>
+									</ul>
+
+									<div class="panel-footer">
+										<a href="yumu.html">作者：雨幕</a>
+										<a href="about.html"><span style="float: right">更多...</span></a>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<div class="row">
+						<hr>
+						<p class="text-center">站长:李华龙(雨幕)&nbsp;&nbsp;学号:201825040322&nbsp;&nbsp;18级软件技术3班</p>
+						<p class="text-center">版权所有Copyright &nbsp;&nbsp;2020-2040&copy;&nbsp; All Rights Reserved&nbsp;&nbsp; 备0000000</p>
+
+					</div>
+	</body>
+
+</html>

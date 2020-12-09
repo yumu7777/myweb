@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--移动优先-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>作者</title>
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+
+		<script src="js/bootstrap.min.js"></script>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+
+	</head>
+	<script>
+		$(function() {
+			$("[data-toggle='popover']").popover();
+		});
+	</script>
+
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<a class="navbar-brand">
+						<img src="img/logo1.png" art="logo" id="logo" />
+					</a>
+				</div>
+
+				<ul class="nav nav-tabs ">
+
+					<li>
+
+						<a href="index.html">主页</a>
+					</li>
+					<li>
+						<a href="poetry.html">古诗词</a>
+					</li>
+					<li>
+						<a href="music.html">古风歌曲</a>
+					</li>
+					<li>
+						<a href="photo.html">古风相册</a>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">更多&nbsp;<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="yumu.html">作者</a>
+							</li>
+							<li>
+								<a href="about.html">关于</a>
+							</li>
+
+						</ul>
+					</li>
+					<!--搜索-->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<span style="padding-right: 15px;"><a href="login.html">登录</a></span>
+							<input type="text" class="form-control" placeholder="请输入关键字">
+						</div>
+						<a href="#"><img src="img/search.png" height="36" width="36" /></a>
+					</form>
+				</ul>
+
+			</nav>
+
+			<!--个人介绍部分-->
+			<div class="tab-pane active" id="news">
+				<div class="container">
+					<div class="row" id="t">
+						<div class="jumbotron text-right alert-info">
+							<p>
+								<h2>关于我想说的话</h2><br> 我们见到的太阳是8分钟之前的太阳，见到的月亮是1.3秒之前的月亮，
+
+								<br> 见到一英里以外的建筑是5微秒之前的存在，即使你在我一米之外，
+								<br> 我见到的也是3纳米秒以前的你。我们所眼见的都是过去，但请记住，<br>我们所触碰的，都是现在；我们所要跋涉的，都是未来。
+
+							</p>
+						</div>
+
+					</div>
+					<div class="row" id="zt">
+						<div class="col-xs-5" id="z1">
+							<div class="row">
+								<div id="zss">
+									<div class="col-xs-5" id="zs">
+										<img src="img/3.gif" class="img-responsive img-circle " width="100px" height="80px" />
+
+									</div>
+									<div class="col-xs-7" id="zsy">
+										<h3>我的个人空间</h3>
+										<p><span class="glyphicon glyphicon-headphones">在远方</span></p>
+
+									</div>
+								</div>
+
+								<div class="row" id="zz">
+									<div class="panel panel-info">
+										<div class="panel-heading">
+											<span class="glyphicon glyphicon-user"></span>个人信息
+										</div>
+										<div class="panel-body">
+
+											<p>李华龙(雨幕)</p>
+											<div id="zssy">
+
+												<span class="glyphicon glyphicon-home"></span>甘肃省平凉市泾川县<br>
+												<span class="glyphicon glyphicon-file"></span>邮政编码：<kbd>744300</kbd><br>
+												<span class="glyphicon glyphicon-phone"></span>联系电话:17861000679<br>
+												<span class="glyphicon glyphicon-envelope"></span>邮箱：
+												<a href="#">123791609@qq.com</a><br>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row" id="z4">
+									<div class="panel panel-info">
+										<div class="panel-heading">
+											<span class="glyphicon glyphicon-leaf"></span>爱好
+										</div>
+										<div class="panel-body">
+											<div class="row">
+												<div class="col-xs-2">
+													篮球
+												</div>
+												<div class="col-xs-10">
+													<div class="progress">
+														<div class="progress-bar progress-bar-striped active" style="width:80%"></div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-2">
+													编程
+												</div>
+												<div class="col-xs-10">
+													<div class="progress">
+														<div class="progress-bar progress-bar-striped progress-bar-warning active" style="width:70%"></div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-2">
+													读书
+												</div>
+												<div class="col-xs-10">
+													<div class="progress">
+														<div class="progress-bar progress-bar-striped active progress-bar-success" style="width:60%"></div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-2">
+													旅游
+												</div>
+												<div class="col-xs-10">
+													<div class="progress">
+														<div class="progress-bar progress-bar-striped active progress-bar-info" style="width:40%"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="panel panel-info" id="z3">
+										<div class="panel-heading">
+											<span class="glyphicon glyphicon-alert"></span>联系我
+										</div>
+										<div class="panel-body">
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label class="control-label col-xs-4">名字</label>
+													<div class="col-xs-8">
+														<input type="text" class="form-control">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-xs-4">留言</label>
+													<div class="col-xs-8">
+														<input type="text" class="form-control">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-xs-4"></label>
+													<div class="col-xs-8">
+
+														<button type="button" class="btn btn-info btn-block" title="温馨提示!" data-container="body" data-toggle="popover" data-placement="left" data-content="你可能留言成功了!">
+		                                                                                                                        发送
+	                                                </button>
+														
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-7" id="z2">
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									作品展示
+								</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="thumbnail">
+												<img src="img/gr.PNG" alt="通用的占位符缩略图">
+												<div class="caption">
+													<h4>个人记账系统</h4>
+													<p>合理记录你的每一天,享受每一天</p>
+													<p>
+														
+														<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="left" data-content="亲,还在学习中!!">
+		                                                                                                                        发送
+	                                                </button>
+
+														<a class="btn btn-default" role="button" id="b1" disabled>
+															合作
+														</a>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="thumbnail">
+												<img src="img/gl.PNG" alt="通用的占位符缩略图">
+												<div class="caption">
+													<h4>用户管理系统</h4>
+													<p>一个初学者入手的好项目,欢迎咨询</p>
+													<p>
+														<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="left" data-content="亲,暂时不能跳转!!">
+		                                                                                                                        发送
+	                                                </button>
+														<a class="btn btn-default" role="button" id="b2" disabled>
+															合作
+														</a>
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-4">
+											<div class="thumbnail">
+												<img src="img/ly.PNG" alt="通用的占位符缩略图">
+												<div class="caption">
+													<h4>泾川旅游网</h4>
+													<p>小县城的一山一水,淳朴风情</p>
+													<p>
+														<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="left" data-content="!!!!">
+		                                                                                                                        发送
+	                                                </button>
+														<a class="btn btn-default" role="button" id="b3" disabled>
+															合作
+														</a>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<div class="panel panel-info">
+										<div class="panel-heading">
+											<h5><span class="glyphicon glyphicon-warning-sign">站长细语</span></h5></div>
+										<div class="panel-body">
+											<p><span class="glyphicon glyphicon-hand-right">&nbsp;欢迎访问本站,还在不断学习中.</span></p>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									教育经历
+								</div>
+								<table class="table table-striped">
+									<th>时间</th>
+									<th>学校</th>
+									<th>性质</th>
+									<tr>
+										<td>2000-2004</td>
+										<td>太平中学</td>
+										<td>初中</td>
+									</tr>
+									<tr>
+										<td>2007-2009</td>
+										<td>泾川县第一中学</td>
+										<td>高中</td>
+									</tr>
+									<tr>
+										<td>2018-今天</td>
+										<td>日照职业技术学院</td>
+										<td>高职</td>
+									</tr>
+									<tr>
+										<td>以后</td>
+										<td>...</td>
+										<td>...</td>
+									</tr>
+								</table>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="row">
+						<hr>
+						<p class="text-center">站长:李华龙(雨幕)&nbsp;&nbsp;学号:201825040322&nbsp;&nbsp;18级软件技术3班</p>
+						<p class="text-center">版权所有Copyright &nbsp;&nbsp;2020-2040&copy;&nbsp; All Rights Reserved&nbsp;&nbsp; 备0000000</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+	</body>
+
+</html>
